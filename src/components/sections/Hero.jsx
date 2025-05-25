@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
-import HeroImg from "../../images/HeroImage.jpeg";
+import ImageCarousel from "../../components/cards/ImageCarousel"; // Adjust path if needed
+import HeroImg from "../../images/HeroImage5.jpg";
+import HeroImg1 from "../../images/HeroImage.jpeg";
 import HeroBgAnimation from "../HeroBgAnimation";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
@@ -14,11 +16,27 @@ import {
 import StarCanvas from "../canvas/Stars";
 
 const HeroContainer = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
-  position: relative;
   padding: 80px 30px;
   z-index: 1;
+  overflow: hidden;
+
+  // Add background image via pseudo-element
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(${HeroImg});
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15; // adjust this value as needed
+    z-index: -1;
+  }
 
   @media (max-width: 960px) {
     padding: 66px 16px;
@@ -30,6 +48,7 @@ const HeroContainer = styled.div`
 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
+
 const HeroInnerContainer = styled.div`
   position: relative;
   display: flex;
@@ -58,7 +77,7 @@ const HeroRightContainer = styled.div`
   width: 100%;
   order: 2;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   @media (max-width: 960px) {
     order: 1;
     display: flex;
@@ -178,11 +197,11 @@ const ResumeButton = styled.a`
 `;
 
 const Img = styled.img`
-  border-radius: 50%;
+  border-radius: 0%;
   width: 100%;
   height: 100%;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 500px;
+  max-height: 500px;
   border: 2px solid ${({ theme }) => theme.primary};
 
   @media (max-width: 640px) {
@@ -258,13 +277,14 @@ const Hero = () => {
             <HeroRightContainer>
               <motion.div {...headContentAnimation}>
                 <Tilt>
-                  <Img src={HeroImg} alt="Rishav Chanda" />
+                  <Img src={HeroImg1} alt="Rishav Chanda" />
                 </Tilt>
               </motion.div>
             </HeroRightContainer>
           </HeroInnerContainer>
         </motion.div>
       </HeroContainer>
+      <ImageCarousel />
     </div>
   );
 };
