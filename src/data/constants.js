@@ -11,10 +11,10 @@ export const Bio = {
     "Join us as we explore the universe—one project, one mission, one launch at a time.",
   ],
   github: "https://github.com/aman245002",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/company/cguspace-club/",
   twitter: "",
-  insta: "",
-  facebook: "",
+  insta: "https://www.instagram.com/cgu.spaceclub?igsh=bjhpYjhna3Joc2Yx",
+  facebook: "https://www.facebook.com/people/Cgu-SpaceClub/61572395409583/",
 };
 
 export const skills = [
