@@ -1,4 +1,7 @@
 import Member1Image from "../images/member1.jpg"
+import Member2Image from "../images/team1.PNG"
+import Member3Image from "../images/team2.jpeg"
+import Member4Image from "../images/team3.jpeg"
 export const Bio = {
   name: "Cgu Space Club",
   roles: ["Innovation", "Exploration", "Space", "Astronomy"],
@@ -29,7 +32,7 @@ export const skills = [
     title: "Dr. Soumya Mishra",
     image: Member1Image,
     designation: "Custodian, Space Club-CGU",
-    branch: "Asso. Professor",
+    branch: "Asst. Professor",
     year: "ECE Department",
   },
   {
@@ -41,7 +44,7 @@ export const skills = [
   },
   {
     title: "Rahul Kumar Gupta",
-    image: Member1Image,
+    image: Member4Image,
     designation: "Student Vice-President",
     branch: "Computer Science",
     year: "3rd Year",
@@ -69,7 +72,7 @@ export const skills = [
   },
   {
     title: "Asmita Agarwal",
-    image: Member1Image,
+    image: Member2Image,
     designation: "Student Volunteer",
     branch: "Computer Science",
     year: "3rd Year",
@@ -83,7 +86,7 @@ export const skills = [
   },
   {
     title: "Nitish Giri",
-    image: Member1Image,
+    image: Member3Image,
     designation: "Student Volunteer",
     branch: "Computer Science",
     year: "3rd Year",
