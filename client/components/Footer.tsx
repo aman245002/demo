@@ -1,0 +1,151 @@
+import { Link } from "react-router-dom";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Mail,
+  Phone,
+} from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer className="py-12 px-4 sm:px-6 lg:px-8 bg-black/80 backdrop-blur-sm border-t border-white/10 mt-20">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          {/* Logo and Description */}
+          <div className="col-span-1 md:col-span-2">
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-purple-600 flex items-center justify-center">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  className="w-4 h-4 text-white"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M8 12l2 2 4-4" />
+                </svg>
+              </div>
+              <span className="text-white font-bold text-xl">
+                CGU Space Club
+              </span>
+            </div>
+            <p className="text-white/70 mb-4 max-w-md">
+              Exploring the cosmos, pushing boundaries, and inspiring the next
+              generation of space explorers at California Graduate University.
+            </p>
+            <div className="flex space-x-4">
+              <Facebook className="w-5 h-5 text-white/60 hover:text-blue-400 cursor-pointer transition-colors" />
+              <Twitter className="w-5 h-5 text-white/60 hover:text-blue-400 cursor-pointer transition-colors" />
+              <Instagram className="w-5 h-5 text-white/60 hover:text-pink-400 cursor-pointer transition-colors" />
+              <Linkedin className="w-5 h-5 text-white/60 hover:text-blue-400 cursor-pointer transition-colors" />
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  to="/"
+                  className="text-white/70 hover:text-white transition-colors"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/team"
+                  className="text-white/70 hover:text-white transition-colors"
+                >
+                  Team
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/projects"
+                  className="text-white/70 hover:text-white transition-colors"
+                >
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/resources"
+                  className="text-white/70 hover:text-white transition-colors"
+                >
+                  Resources
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/blog"
+                  className="text-white/70 hover:text-white transition-colors"
+                >
+                  Blog
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-white font-semibold mb-4">Contact</h3>
+            <ul className="space-y-2">
+              <li className="flex items-center text-white/70">
+                <Mail className="w-4 h-4 mr-2" />
+                <span className="text-sm">contact@cguspaceclub.edu</span>
+              </li>
+              <li className="flex items-center text-white/70">
+                <Phone className="w-4 h-4 mr-2" />
+                <span className="text-sm">+1 (555) 123-4567</span>
+              </li>
+              <li>
+                <Link
+                  to="/sponsorship"
+                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  Become a Sponsor
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="text-white/70 hover:text-white transition-colors"
+                >
+                  Get in Touch
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-white/10">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="text-white/60 text-sm mb-4 md:mb-0">
+              © 2024 CGU Space Club. All rights reserved. Reaching for the
+              stars.
+            </div>
+            <div className="flex space-x-6 text-sm text-white/60">
+              <a href="#" className="hover:text-white transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Terms of Service
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Code of Conduct
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
