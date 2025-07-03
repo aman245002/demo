@@ -25,7 +25,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo and Club Name */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-purple-600 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-brand-orange to-brand-red flex items-center justify-center shadow-lg">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -37,7 +37,7 @@ const Navigation = () => {
                 <path d="M8 12l2 2 4-4" />
               </svg>
             </div>
-            <span className="text-white font-bold text-xl group-hover:text-blue-300 transition-colors">
+            <span className="text-white font-bold text-xl group-hover:text-brand-orange transition-colors">
               CGU Space Club
             </span>
           </Link>
@@ -48,9 +48,9 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-blue-300 ${
+                className={`text-sm font-medium transition-colors hover:text-brand-orange ${
                   isActive(item.path)
-                    ? "text-blue-400 border-b-2 border-blue-400 pb-1"
+                    ? "text-brand-orange border-b-2 border-brand-orange pb-1"
                     : "text-white/90"
                 }`}
               >
@@ -65,7 +65,7 @@ const Navigation = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-blue-300 hover:bg-white/10"
+              className="text-white hover:text-brand-orange hover:bg-white/10"
             >
               {isOpen ? (
                 <X className="h-6 w-6" />
@@ -85,9 +85,9 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`block px-3 py-2 text-base font-medium transition-colors hover:text-blue-300 hover:bg-white/5 rounded-md ${
+                className={`block px-3 py-2 text-base font-medium transition-colors hover:text-brand-orange hover:bg-white/5 rounded-md ${
                   isActive(item.path)
-                    ? "text-blue-400 bg-white/10"
+                    ? "text-brand-orange bg-white/10"
                     : "text-white/90"
                 }`}
                 onClick={() => setIsOpen(false)}

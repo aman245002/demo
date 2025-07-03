@@ -12,6 +12,24 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      sans: [
+        "Inter",
+        "SF Pro Display",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "system-ui",
+        "sans-serif",
+      ],
+      display: [
+        "Inter",
+        "SF Pro Display",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "system-ui",
+        "sans-serif",
+      ],
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -56,6 +74,21 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        brand: {
+          orange: "#FF6B35",
+          red: "#DC2626",
+          "dark-red": "#B91C1C",
+          "light-orange": "#FF8F65",
+          black: "#000000",
+          white: "#FFFFFF",
+          gray: {
+            100: "#F5F5F5",
+            200: "#E5E5E5",
+            300: "#D4D4D4",
+            800: "#1F1F1F",
+            900: "#0F0F0F",
+          },
         },
       },
       borderRadius: {
