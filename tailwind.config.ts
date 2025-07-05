@@ -19,7 +19,8 @@ export default {
         "-apple-system",
         "BlinkMacSystemFont",
         "system-ui",
-        "sans-serif",
+        "Poppins",
+        "sans-serif"
       ],
       display: [
         "Inter",

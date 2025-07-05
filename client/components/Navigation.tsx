@@ -25,17 +25,12 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo and Club Name */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-brand-orange to-brand-red flex items-center justify-center shadow-lg">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                className="w-6 h-6 text-white"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <path d="M8 12l2 2 4-4" />
-              </svg>
+            <div className="w-10 h-10 rounded-full overflow-hidden shadow-lg">
+              <img
+                src="/logo.jpg" // Replace with the actual path to your logo image
+                alt="CGU Space Club Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
             <span className="text-white font-bold text-xl group-hover:text-brand-orange transition-colors">
               CGU Space Club
