@@ -16,31 +16,45 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-r from-brand-orange to-brand-red flex items-center justify-center shadow-lg">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  className="w-4 h-4 text-white"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M8 12l2 2 4-4" />
-                </svg>
+              <div className="w-8 h-8 rounded-full overflow-hidden shadow-lg">
+                <img
+                  src="/logo.jpg"
+                  alt="CGU Space Club Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <span className="text-white font-bold text-xl">
                 CGU Space Club
               </span>
             </div>
+
             <p className="text-white/70 mb-4 max-w-md">
               Exploring the cosmos, pushing boundaries, and inspiring the next
-              generation of space explorers at California Graduate University.
+              generation of space explorers at C.V. Raman Global University.
             </p>
+
             <div className="flex space-x-4">
-              <Facebook className="w-5 h-5 text-white/60 hover:text-brand-orange cursor-pointer transition-colors" />
-              <Twitter className="w-5 h-5 text-white/60 hover:text-brand-orange cursor-pointer transition-colors" />
-              <Instagram className="w-5 h-5 text-white/60 hover:text-brand-red cursor-pointer transition-colors" />
-              <Linkedin className="w-5 h-5 text-white/60 hover:text-brand-orange cursor-pointer transition-colors" />
+              <a
+                href="https://www.facebook.com/profile.php?id=61572395409583"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Facebook className="w-5 h-5 text-white/60 hover:text-brand-orange cursor-pointer transition-colors" />
+              </a>
+              <a
+                href="https://www.instagram.com/cgu.spaceclub?igsh=bjhpYjhna3Joc2Yx"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram className="w-5 h-5 text-white/60 hover:text-brand-red cursor-pointer transition-colors" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/cguspace-club/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin className="w-5 h-5 text-white/60 hover:text-brand-orange cursor-pointer transition-colors" />
+              </a>
             </div>
           </div>
 
@@ -97,7 +111,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center text-white/70">
                 <Mail className="w-4 h-4 mr-2" />
-                <span className="text-sm">contact@cguspaceclub.edu</span>
+                <span className="text-sm">spacesystems@cgu-odisha.ac.in</span>
               </li>
               <li className="flex items-center text-white/70">
                 <Phone className="w-4 h-4 mr-2" />
@@ -108,7 +122,7 @@ const Footer = () => {
                   to="/sponsorship"
                   className="text-brand-orange hover:text-brand-light-orange transition-colors font-medium"
                 >
-                  Become a Sponsor
+                  Get Involved
                 </Link>
               </li>
               <li>
@@ -127,10 +141,11 @@ const Footer = () => {
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-white/60 text-sm mb-4 md:mb-0">
-              © 2024 CGU Space Club. All rights reserved. Reaching for the
-              stars.
+              © {new Date().getFullYear()} CGU Space Club. All rights reserved.
+              Reaching for the stars.
             </div>
-            <div className="flex space-x-6 text-sm text-white/60">
+
+            {/* <div className="flex space-x-6 text-sm text-white/60">
               <a href="#" className="hover:text-white transition-colors">
                 Privacy Policy
               </a>
@@ -140,7 +155,7 @@ const Footer = () => {
               <a href="#" className="hover:text-white transition-colors">
                 Code of Conduct
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

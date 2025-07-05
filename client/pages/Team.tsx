@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -136,7 +137,7 @@ export default function Team() {
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/8851457/pexels-photo-8851457.jpeg"
+            src="/HeroImage1.jpg"
             alt="Diverse scientists working together in modern laboratory"
             className="w-full h-full object-cover scale-110"
           />
@@ -160,7 +161,7 @@ export default function Team() {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="bg-black/40 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center hover:border-brand-orange/50 transition-all duration-300"
+                className="bg-black/40 border border-white/20 rounded-xl p-6 text-center hover:border-brand-orange/50 transition-all duration-300"
               >
                 <stat.icon className="w-8 h-8 text-brand-orange mx-auto mb-3" />
                 <div className="text-3xl font-bold text-white mb-1">
@@ -309,7 +310,7 @@ export default function Team() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/8474495/pexels-photo-8474495.jpeg"
+            src="/HeroImage2.jpg"
             alt="Two astronauts collaborating on Mars-like landscape"
             className="w-full h-full object-cover scale-110"
           />
@@ -339,7 +340,7 @@ export default function Team() {
 
           {/* Benefits Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-black/40 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:border-brand-orange/50 transition-all duration-300 hover:scale-105">
+            <div className="bg-black/40 border border-white/20 rounded-xl p-6 hover:border-brand-orange/50 transition-all duration-300 hover:scale-105">
               <Award className="w-12 h-12 text-brand-orange mx-auto mb-4" />
               <h3 className="text-lg font-bold text-white mb-2">
                 Learn & Grow
@@ -349,7 +350,7 @@ export default function Team() {
               </p>
             </div>
 
-            <div className="bg-black/40 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:border-brand-red/50 transition-all duration-300 hover:scale-105">
+            <div className="bg-black/40 border border-white/20 rounded-xl p-6 hover:border-brand-red/50 transition-all duration-300 hover:scale-105">
               <Users className="w-12 h-12 text-brand-red mx-auto mb-4" />
               <h3 className="text-lg font-bold text-white mb-2">Network</h3>
               <p className="text-white/80 text-sm font-medium">
@@ -357,7 +358,7 @@ export default function Team() {
               </p>
             </div>
 
-            <div className="bg-black/40 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:border-brand-light-orange/50 transition-all duration-300 hover:scale-105">
+            <div className="bg-black/40 border border-white/20 rounded-xl p-6 hover:border-brand-light-orange/50 transition-all duration-300 hover:scale-105">
               <Zap className="w-12 h-12 text-brand-light-orange mx-auto mb-4" />
               <h3 className="text-lg font-bold text-white mb-2">Impact</h3>
               <p className="text-white/80 text-sm font-medium">
@@ -367,7 +368,7 @@ export default function Team() {
           </div>
 
           {/* Application Process */}
-          <div className="bg-black/30 backdrop-blur-md border border-white/20 rounded-2xl p-8 mb-8">
+          <div className="bg-black/30 border border-white/20 rounded-2xl p-8 mb-8">
             <h3 className="font-display text-2xl font-bold text-white mb-6">
               Application Process
             </h3>
@@ -380,7 +381,7 @@ export default function Team() {
                   Submit Application
                 </h4>
                 <p className="text-white/70 text-sm">
-                  Fill out our online form with your background and interests
+                  Submit your resume with your background and interests
                 </p>
               </div>
 
@@ -408,21 +409,21 @@ export default function Team() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-brand-orange to-brand-red hover:from-brand-light-orange hover:to-brand-dark-red text-white px-12 py-4 text-lg font-bold shadow-2xl hover:shadow-brand-orange/40 transition-all duration-500 hover:scale-110 border border-brand-orange/30"
-            >
-              <Users className="mr-2 h-5 w-5" />
-              Apply to Join
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-white/40 text-white hover:bg-white/15 px-12 py-4 text-lg font-semibold backdrop-blur-sm"
-            >
-              <Mail className="mr-2 h-5 w-5" />
-              Contact Us
-            </Button>
+            <Link to="/contact">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-brand-orange to-brand-red 
+               hover:from-brand-light-orange hover:to-brand-dark-red 
+               text-white px-12 py-4 text-lg font-bold 
+               shadow-2xl hover:shadow-brand-orange/40 
+               transition-all duration-500 
+               hover:scale-110 
+               border border-brand-orange/30"
+              >
+                <Users className="mr-2 h-5 w-5" />
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

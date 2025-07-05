@@ -28,7 +28,7 @@ export default function Index() {
         <div className="relative z-10 min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 font-sans">
           <div className="text-center max-w-5xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-brand-orange via-brand-red to-brand-light-orange bg-clip-text text-transparent tracking-tight">
-              CGU Space Club
+              CGU SPACE CLUB
             </h1>
             <p className="text-lg md:text-2xl mb-8 text-white/90 leading-relaxed font-medium tracking-wide">
               Exploring the cosmos, pushing boundaries, and inspiring the next
@@ -275,7 +275,7 @@ export default function Index() {
                 className="border-white/30 text-white hover:bg-white/10 px-10 py-4 text-lg font-medium"
               >
                 <Award className="mr-2 h-5 w-5" />
-                View Sponsorship Options
+                Get Involved
               </Button>
             </Link>
           </div>
