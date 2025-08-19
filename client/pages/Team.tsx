@@ -1,8 +1,6 @@
 import Navigation from "@/components/Navigation";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -23,7 +21,7 @@ export default function Team() {
       name: "Dr. Smita Rani Parija",
       role: "Co-Ordinator", //was confused for it and the id2 to be put here or somewhere else. and their roles.
       image:
-        "https://images.pexels.com/photos/3862126/pexels-photo-3862126.jpeg",
+        "smitha_maam.jpg",
       description:
         "Leading our space exploration initiatives fueling the creativity and ideas. Asso. Proffesor and President at ECE Department in CGU.",
       color: "orange",
@@ -34,7 +32,7 @@ export default function Team() {
       name: "Dr. Soumya Mishra",
       role: "Co-Ordinator",
       image:
-        "https://images.pexels.com/photos/5255354/pexels-photo-5255354.jpeg",
+        "soumya_maam.jpg",
       description:
         "Managing club operations and coordinating with our students to help them achieve their goal. Asso. Proffessor and Custodian at Ece Department.",
       color: "red",
@@ -45,7 +43,7 @@ export default function Team() {
       name: "Debadutta Sahoo", //the student member lists start from here.
       role: "Student President",
       image:
-        "https://images.pexels.com/photos/8851493/pexels-photo-8851493.jpeg",
+        "president.jpg",
       description:
         "Leading our research initiatives in space technology and materials science.",
       color: "light-orange",
@@ -56,7 +54,7 @@ export default function Team() {
       name: "Rahul Kumar Gupta",
       role: "Student Vice-President",
       image:
-        "https://images.pexels.com/photos/8960993/pexels-photo-8960993.jpeg",
+        "vice_president.jpg",
       description:
         "Overseeing Satellite development and projects, to turn the ideas of us students into reality.",
       color: "orange",
@@ -67,7 +65,7 @@ export default function Team() {
       name: "Debankur Pal",
       role: "Student Secretary",
       image:
-        "https://images.pexels.com/photos/8515116/pexels-photo-8515116.jpeg",
+        "dabankur_pal.jpg",
       description:
         "Ensuring all projects is being handeled effeciently and effectively, while handeling the communication within the team",
       color: "red",
@@ -78,7 +76,7 @@ export default function Team() {
       name: "Aditi Singh",
       role: "Student Tresurer",
       image:
-        "https://images.pexels.com/photos/3862126/pexels-photo-3862126.jpeg",
+        "aditi_singh.jpg",
       description:
         "Creating and Overseeing budgets and possible fun raisers, to be able bring the project to light and giving it a physical form.",
       color: "light-orange",
@@ -89,7 +87,7 @@ export default function Team() {
       name: "Nilkamal Ghosh",
       role: "Student Volunteer",
       image:
-        "https://images.pexels.com/photos/3862126/pexels-photo-3862126.jpeg",
+        "Nilkamal.jpg",
       description:
         "Helping the team in transitioning the ideas into perspective, to help the technological world",
       color: "orange",
@@ -100,7 +98,7 @@ export default function Team() {
       name: "Asmita Agarwal",
       role: "Student Volunteer",
       image:
-        "https://images.pexels.com/photos/3862126/pexels-photo-3862126.jpeg",
+        "asmita_agarwal.png",
       description:
         "Helping the team in transitioning the ideas into perspective, to help the technological world",
       color: "red",
@@ -111,7 +109,7 @@ export default function Team() {
       name: "Smita Nayak",
       role: "Student Volunteer",
       image:
-        "https://images.pexels.com/photos/3862126/pexels-photo-3862126.jpeg",
+        "smita_nayak.jpg",
       description:
         "Helping the team in transitioning the ideas into perspective, to help the technological world",
       color: "light-orange",
@@ -122,29 +120,29 @@ export default function Team() {
       name: "Nitish Giri",
       role: "Student Volunteer",
       image:
-        "https://images.pexels.com/photos/3862126/pexels-photo-3862126.jpeg",
+        "nitish_giri.jpg",
       description:
         "Helping the team in transitioning the ideas into perspective, to help the technological world",
       color: "orange",
       achievements: ["PR Specialist", "TEDx Speaker", "Media Relations"],
     },
+    // {
+    //   id: 11,
+    //   name: "Priyan Acharya",
+    //   role: "Student Volunteer",
+    //   image:
+    //     "https://images.pexels.com/photos/3862126/pexels-photo-3862126.jpeg",
+    //   description:
+    //     "Helping the team in transitioning the ideas into perspective, to help the technological world",
+    //   color: "red",
+    //   achievements: ["PR Specialist", "TEDx Speaker", "Media Relations"],
+    // },
     {
       id: 11,
-      name: "Priyan Acharya",
-      role: "Student Volunteer",
-      image:
-        "https://images.pexels.com/photos/3862126/pexels-photo-3862126.jpeg",
-      description:
-        "Helping the team in transitioning the ideas into perspective, to help the technological world",
-      color: "red",
-      achievements: ["PR Specialist", "TEDx Speaker", "Media Relations"],
-    },
-    {
-      id: 12,
       name: "Ramakanta Senapati",
       role: "Student Volunteer",
       image:
-        "https://images.pexels.com/photos/3862126/pexels-photo-3862126.jpeg",
+        "ramakant.jpg",
       description:
         "Helping the team in transitioning the ideas into perspective, to help the technological world",
       achievements: ["PR Specialist", "TEDx Speaker", "Media Relations"],
@@ -197,21 +195,8 @@ export default function Team() {
   };
 
   return (
-    <>
-      <SEO 
-        title="Our Team"
-        description="Meet the talented team behind CGU Space Club - from experienced coordinators to passionate student leaders driving innovation in space technology."
-        keywords="CGU Space Club team, space club coordinators, student leaders, space technology team, Bhubaneswar space club members"
-      />
-      <div className="min-h-screen bg-black text-white font-sans">
-        <Navigation />
-
-        {/* Breadcrumbs */}
-        <section className="py-8 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <Breadcrumbs />
-          </div>
-        </section>
+    <div className="min-h-screen bg-black text-white font-sans">
+      <Navigation />
 
       {/* Hero Section with Background */}
       <section className="relative py-20 sm:px-6 lg:px-8 overflow-hidden">
@@ -510,6 +495,5 @@ export default function Team() {
 
       <Footer />
     </div>
-    </>
   );
 }
